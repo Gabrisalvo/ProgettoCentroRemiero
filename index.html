@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Remiero</title>
+  <style>
+    /* Stile globale */
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Header */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Menu */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    nav a:hover {
+      background-color: #ddd;
+    }
+    
+    /* Contenuto */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+    
+    .column {
+      flex: 50%;
+      padding: 0 10px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Tag responsive */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Centro Remiero</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Servizi</a>
+    <a href="#">Eventi</a>
+    <a href="#">Contatti</a>
+  </nav>
+  
+  <div class="row">
+    <div class="column">
+      <h2>Servizi</h2>
+      <p>Il nostro centro remiero offre i seguenti servizi:</p>
+      <ul>
+        <li>Noleggio barche</li>
+        <li>Lezioni di canottaggio</li>
+        <li>Gare di canottaggio</li>
+        <li>Trasporto barche</li>
+      </ul>
+    </div>
+    
+    <div class="column">
+      <h2>Eventi</h2>
+      <p>Partecipa ai nostri eventi:</p>
+      <ul>
+        <li>Regata del Solstizio</li>
+        <li>Festa del canottaggio</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Centro Remiero - Via del Canottaggio, 123 - 00100 Roma - Tel. 06 1234567</p>
+  </footer>
+</body>
+</html>
