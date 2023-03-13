@@ -136,6 +136,10 @@ footer {
 a{
     color: red;
 }
+#map {
+        height: 400px;
+        width: 100%;
+      }
     </style>
     <title>Canottaggio - Homepage</title>
     <meta charset="UTF-8">
@@ -186,6 +190,35 @@ a{
 				Direzione Tecnica<br>
 				
 				coach@centroremierolagodipusiano.it</p>
+        </section>
+        <section class="news">
+            <div id="map"></div>
+
+            <!-- Codice JavaScript per visualizzare la mappa -->
+            <script>
+              function initMap() {
+                // Posizione della mappa
+                var myLatLng = {lat: 45.4654, lng: 9.1859};
+        
+                // Crea la mappa
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 14,
+                  center: myLatLng
+                });
+        
+                // Crea il marker sulla mappa
+                var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                  title: 'Milano'
+                });
+              }
+            </script>
+        
+            <!-- Includi il codice JavaScript di Google Maps API -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=TUA_API_KEY&callback=initMap"
+            async defer></script>
+            </section>
         </section>
         <section class="news">
             <h2>News</h2>
