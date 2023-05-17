@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     declineBtn.addEventListener('click', function() {
       hidePopup();
       // Reindirizza l'utente a una pagina di rifiuto
-      window.location.href = 'pagina-di-rifiuto.html';
+      window.location.href = 'Rifiuto.html';
     });
   });
   
