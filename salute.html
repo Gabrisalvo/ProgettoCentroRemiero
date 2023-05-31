@@ -165,18 +165,39 @@ margin-left: 20px;
 }
 #Immagine {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
   
-#Immagine img{
+#Immagine img {
     margin: 40px; /* Aggiungi un margine di 10px intorno alle immagini */
-    width: 500px;
-    height: 300px;
+    width: 300px;
+    height: 130px;
+}
+#testo {
+font-size: 20px;
+}
+.bottone {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.bottone2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
-
-   
 </style>
 <title>Infirmary/fisio</title>
 <meta charset="UTF-8">
@@ -204,22 +225,27 @@ margin-left: 20px;
         </nav>
     </header>
     <main>
-        <div class="news">
-            <h2>Sala infermeria - fisio - massaggi</h2>
-            
-            <article>
-                <h3>Laboratorio Posturale</h3>
-                <a href="salute.html">Leggi tutto</a>
-            </article>
-        </div>
+
 <div id="Immagine">
-<img src="https://static.wixstatic.com/media/76bff0_99f9d225632346d5a2e8b859e00080e6~mv2.jpg/v1/fill/w_317,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Massage%20and%20Fisio%20Room%201.jpg">
-<img src="https://static.wixstatic.com/media/76bff0_c78eb10288864c4393475ae6f958676a~mv2.jpg/v1/fill/w_329,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Massage%20and%20Fisio%20Room%202.jpg">
+<img src="https://static.wixstatic.com/media/76bff0_5fbae5c3ab874f0587b8e3288861bd1a~mv2.jpg/v1/fill/w_284,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/LABORATORIO%20SALUTE.jpg">
+
 </div>
+<div id="testo">
+    <strong><p>Due nuovi importanti attività rivolte agli Atleti ed alla Comunità</p></strong>
+  <ul>
+   <strong><li>Il Laboratorio dell'Atleta</li></strong>
+    <strong> <li>Il Laboratorio sanitario per la Comunità </li></strong>
+   
+  </ul>
+  
+</div>
+<div class="container">
+    <button><a href=" Prevenzione Infortuni.pdf" class="bottone">PREVENZIONE INFORTUNI</a></button>
+    <button><a href="INJURIES PREVENTION SERVICE.pdf" class="bottone2">INJURIES PREVENTION SERVICE</a></button>
+  </div>
+  
 
 
-
-    
     
     
     
